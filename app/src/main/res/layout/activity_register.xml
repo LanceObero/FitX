@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <TextView
+        android:id="@+id/tvRegisterLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FITX"
+        android:textColor="@color/fitx_primary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:id="@+id/tvCreateAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="@color/fitx_white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/tvRegisterDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start your fitness journey with FitX"
+        android:textColor="@color/fitx_gray"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateAccountTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/fitx_white"
+        android:textColorHint="@color/fitx_gray"
+        android:backgroundTint="@color/fitx_primary"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/fitx_white"
+        android:textColorHint="@color/fitx_gray"
+        android:backgroundTint="@color/fitx_primary"
+        app:layout_constraintTop_toBottomOf="@id/etFullName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/fitx_white"
+        android:textColorHint="@color/fitx_gray"
+        android:backgroundTint="@color/fitx_primary"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/fitx_white"
+        android:textColorHint="@color/fitx_gray"
+        android:backgroundTint="@color/fitx_primary"
+        app:layout_constraintTop_toBottomOf="@id/etRegisterPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@color/fitx_black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/fitx_primary"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@color/fitx_primary"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

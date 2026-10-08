@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fitx_black">
+
+    <!-- Main Scrollable Content -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header -->
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good Morning, Athlete 👋"
+                android:textColor="@color/fitx_white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready to crush your workout?"
+                android:textColor="@color/fitx_gray"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp" />
+
+            <!-- Streak -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="18dp"
+                android:background="@drawable/bg_card"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥"
+                    android:textSize="34sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <TextView
+                        android:id="@+id/tvStreak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 DAY STREAK"
+                        android:textColor="@color/fitx_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep the momentum going!"
+                        android:textColor="@color/fitx_gray"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Today's Workout -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Workout"
+                android:textColor="@color/fitx_white"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/bg_workout_card"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMMENDED FOR YOU"
+                    android:textColor="@color/fitx_primary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <!-- Recommended Workout -->
+
+                <TextView
+                    android:id="@+id/tvRecommendedWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Body Fitness"
+                    android:textColor="@color/fitx_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Fitness Goal -->
+
+                <TextView
+                    android:id="@+id/tvFitnessGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Build Strength"
+                    android:textColor="@color/fitx_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp" />
+
+                <!-- Fitness Level -->
+
+                <TextView
+                    android:id="@+id/tvFitnessLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beginner"
+                    android:textColor="@color/fitx_gray"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp" />
+
+                <!-- Start Workout -->
+
+                <Button
+                    android:id="@+id/btnStartWorkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="START WORKOUT"
+                    android:textColor="@color/fitx_black"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/fitx_primary"
+                    android:layout_marginTop="14dp" />
+
+            </LinearLayout>
+
+            <!-- Workout Categories -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout Categories"
+                android:textColor="@color/fitx_white"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Strength -->
+
+                    <TextView
+                        android:id="@+id/categoryStrength"
+                        android:layout_width="110dp"
+                        android:layout_height="75dp"
+                        android:text="💪&#10;Strength"
+                        android:textColor="@color/fitx_white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_category"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="10dp" />
+
+                    <!-- Cardio -->
+
+                    <TextView
+                        android:id="@+id/categoryCardio"
+                        android:layout_width="110dp"
+                        android:layout_height="75dp"
+                        android:text="🔥&#10;Cardio"
+                        android:textColor="@color/fitx_white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_category"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="10dp" />
+
+                    <!-- Abs -->
+
+                    <TextView
+                        android:id="@+id/categoryAbs"
+                        android:layout_width="110dp"
+                        android:layout_height="75dp"
+                        android:text="⚡&#10;Abs"
+                        android:textColor="@color/fitx_white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_category"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- Progress -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Progress"
+                android:textColor="@color/fitx_white"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@drawable/bg_card"
+                android:layout_marginTop="12dp">
+
+                <!-- Workouts -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHomeWorkoutCount"
+                        android:text="0"
+                        android:textColor="@color/fitx_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Workouts"
+                        android:textColor="@color/fitx_gray"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Calories -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHomeCalories"
+                        android:text="0"
+                        android:textColor="@color/fitx_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Calories"
+                        android:textColor="@color/fitx_gray"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- Minutes -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHomeMinutes"
+                        android:text="0"
+                        android:textColor="@color/fitx_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Minutes"
+                        android:textColor="@color/fitx_gray"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/fitx_dark"
+        android:weightSum="4">
+
+        <!-- Home -->
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="⌂&#10;Home"
+            android:textColor="@color/fitx_primary"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Workout -->
+
+        <TextView
+            android:id="@+id/navWorkout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="🏋&#10;Workout"
+            android:textColor="@color/fitx_gray"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Progress -->
+
+        <TextView
+            android:id="@+id/navProgress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="▥&#10;Progress"
+            android:textColor="@color/fitx_gray"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Profile -->
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="●&#10;Profile"
+            android:textColor="@color/fitx_gray"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

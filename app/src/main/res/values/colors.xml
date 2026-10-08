@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fitx_black">#0F1115</color>
+    <color name="fitx_dark">#171A21</color>
+    <color name="fitx_primary">#7CFF4F</color>
+    <color name="fitx_white">#FFFFFF</color>
+    <color name="fitx_gray">#A7AAB2</color>
+    <color name="fitx_light_gray">#E8E9ED</color>
+</resources>

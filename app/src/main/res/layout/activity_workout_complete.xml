@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="@color/fitx_black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉"
+        android:textSize="64sp" />
+
+    <TextView
+        android:id="@+id/tvWorkoutComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WORKOUT COMPLETE!"
+        android:textColor="@color/fitx_white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvWorkoutSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chest Workout&#10;&#10;20 minutes • 100 calories&#10;Beginner • Build Strength"
+        android:textColor="@color/fitx_gray"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5dp" />
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="BACK TO HOME"
+        android:textColor="@color/fitx_black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="@color/fitx_primary"
+        android:layout_marginTop="35dp" />
+
+</LinearLayout>

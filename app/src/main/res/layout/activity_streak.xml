@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← BACK"
+            android:textColor="@color/fitx_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORKOUT STREAK"
+            android:textColor="@color/fitx_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔥 0 DAY STREAK"
+            android:textColor="@color/fitx_white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST 14 DAYS"
+            android:textColor="@color/fitx_gray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/streakContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>
+

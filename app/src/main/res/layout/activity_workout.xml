@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back Button -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← BACK"
+            android:textColor="@color/fitx_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_dark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- Workout Category -->
+
+        <TextView
+            android:id="@+id/tvWorkoutCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHEST"
+            android:textColor="@color/fitx_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <!-- Workout Name -->
+
+        <TextView
+            android:id="@+id/tvWorkoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest Home Workout"
+            android:textColor="@color/fitx_white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Workout Information -->
+
+        <TextView
+            android:id="@+id/tvWorkoutInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 minutes • Beginner • No Equipment"
+            android:textColor="@color/fitx_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Exercises Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <!-- Dynamic Exercise Container -->
+
+        <LinearLayout
+            android:id="@+id/exerciseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp" />
+
+        <!-- Begin Workout Button -->
+
+        <Button
+            android:id="@+id/btnBeginWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="BEGIN WORKOUT"
+            android:textColor="@color/fitx_black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="@color/fitx_primary"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

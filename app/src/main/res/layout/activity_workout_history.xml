@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← BACK"
+            android:textColor="@color/fitx_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORKOUT HISTORY"
+            android:textColor="@color/fitx_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Activity"
+            android:textColor="@color/fitx_white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every workout you've completed is recorded here."
+            android:textColor="@color/fitx_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/historyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

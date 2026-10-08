@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← BACK"
+            android:textColor="@color/fitx_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_dark" />
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="@color/fitx_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Fitness Profile"
+            android:textColor="@color/fitx_white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <!-- User Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:padding="24dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="👤"
+                android:textSize="40sp"
+                android:background="@drawable/bg_number" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athlete"
+                android:textColor="@color/fitx_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/tvProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="athlete@fitx.com"
+                android:textColor="@color/fitx_gray"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <!-- Fitness Goal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Goal"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvFitnessGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build Strength"
+            android:textColor="@color/fitx_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/radioFitnessGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioStrength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build Strength"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioWeightLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lose Weight"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioEndurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improve Endurance"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General Fitness"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Fitness Level -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Level"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvFitnessLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            android:textColor="@color/fitx_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/radioFitnessLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="12dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioBeginner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beginner"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioIntermediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioAdvanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:textColor="@color/fitx_white"
+                android:textSize="15sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Body Profile -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Profile"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage your age, height, weight, and BMI"
+            android:textColor="@color/fitx_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnBodyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="VIEW BODY PROFILE"
+            android:textColor="@color/fitx_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_primary"
+            android:layout_marginTop="12dp" />
+
+        <!-- Save Profile -->
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SAVE PROFILE SETTINGS"
+            android:textColor="@color/fitx_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_primary"
+            android:layout_marginTop="20dp" />
+
+        <!-- Workout Preference -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Preference"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Workout • No Equipment"
+            android:textColor="@color/fitx_gray"
+            android:textSize="15sp"
+            android:background="@drawable/bg_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Logout -->
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="LOG OUT"
+            android:textColor="@color/fitx_white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:backgroundTint="@color/fitx_dark"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

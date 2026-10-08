@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitx_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back Button -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="← BACK"
+            android:textColor="@color/fitx_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_dark" />
+
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR PROGRESS"
+            android:textColor="@color/fitx_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep Going!"
+            android:textColor="@color/fitx_white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+
+        <!-- Statistics -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <!-- Workouts -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvWorkoutCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/fitx_primary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WORKOUTS"
+                    android:textColor="@color/fitx_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+
+            <!-- Space -->
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+
+            <!-- Calories -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvCalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/fitx_primary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALORIES"
+                    android:textColor="@color/fitx_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Total Minutes -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/fitx_primary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL MINUTES"
+                android:textColor="@color/fitx_gray"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- Weekly Goal -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goal"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp" />
+
+        <TextView
+            android:id="@+id/tvWeeklyGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 of 5 workouts completed this week"
+            android:textColor="@color/fitx_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <ProgressBar
+            android:id="@+id/progressWeeklyGoal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="5"
+            android:progress="0"
+            android:progressTint="@color/fitx_primary"
+            android:layout_marginTop="12dp" />
+
+
+        <!-- Recent Activity -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Activity"
+            android:textColor="@color/fitx_white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp" />
+
+        <TextView
+            android:id="@+id/tvRecentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No workouts completed yet."
+            android:textColor="@color/fitx_gray"
+            android:textSize="15sp"
+            android:background="@drawable/bg_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp" />
+
+
+        <!-- Workout History -->
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="VIEW ALL WORKOUT HISTORY"
+            android:textColor="@color/fitx_black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_primary"
+            android:layout_marginTop="15dp" />
+
+
+        <!-- Streak -->
+
+        <Button
+            android:id="@+id/btnViewStreak"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="VIEW STREAK"
+            android:textColor="@color/fitx_black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/fitx_primary"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
